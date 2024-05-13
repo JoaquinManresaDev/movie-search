@@ -50,6 +50,7 @@ main {
     padding: 20px;
 }
 
+/* Estilos para las tarjetas de películas */
 .movie-card {
     background-color: #fff;
     border-radius: 10px;
@@ -57,14 +58,15 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
+    flex-direction: column; 
 }
 
 .movie-card .poster {
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .movie-card .poster img {
-    width: 150px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -84,3 +86,24 @@ main {
     color: #666;
 }
 
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; 
+    }
+
+    #company-logo {
+        margin-bottom: 20px;
+    }
+
+    .movie-card {
+        
+        max-width: 400px; 
+        margin: 0 auto;
+    }
+
+    .movie-card .poster {
+        margin-bottom: 20px;
+        margin-right: 0; 
+    }
+}
