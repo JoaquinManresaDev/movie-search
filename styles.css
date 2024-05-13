@@ -107,3 +107,11 @@ main {
         margin-right: 0; 
     }
 }
+
+@media screen and (min-width: 769px) {
+    .movie-card .poster img {
+        max-width: 10% !important; /* Establecer un ancho máximo para las imágenes */
+        height: auto !important; /* Mantener la proporción de aspecto */
+    }
+}
+
